@@ -99,18 +99,30 @@ function App() {
         <h1 className='text-center text-2xl text-love-red font-extrabold mb-6 font-playfair-display'>💌 Cartas para a Miudinha 💌</h1>
         <p className='text-center text-2xl font-playfair-display'>Você é <span className='font-bold text-love-red text-3xl font-great-vibes'><AnimateMessage message={adjective}/></span></p>
       </div>
-      
-      <div className='flex flex-col mx-auto gap-10'>
+
+      <div className='flex flex-grow flex-col gap-10 sm:mx-auto sm:w-96'>
         <Letter message={message}/>
 
         <motion.button
-          className='bg-love-red rounded-xl text-white p-2 w-96 mx-auto font-playfair-display'
+          className='bg-love-red rounded-xl text-white p-2 w-fit mx-auto font-playfair-display'
           whileTap={{ scale: 0.85}}
           onClick={() => onNewMessageClick()}
         >
           Abrir Mensagem
         </motion.button>
       </div>
+      
+      {/* <div className='flex flex-grow flex-col gap-10 '>
+        <Letter message={message}/>
+
+        <motion.button
+          className='bg-love-red rounded-xl text-white p-2 w-fit mx-auto font-playfair-display'
+          whileTap={{ scale: 0.85}}
+          onClick={() => onNewMessageClick()}
+        >
+          Abrir Mensagem
+        </motion.button>
+      </div> */}
 
     </section>
   )
