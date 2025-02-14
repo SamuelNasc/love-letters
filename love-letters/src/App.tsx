@@ -13,7 +13,7 @@ const ADJECTIVES = [
   "Inteligente",
   "Mais do que eu poderia pedir",
   "Bonita",
-  "Minha Miudinha",
+  "A minha Miudinha",
   "Extraordinária",
   "O amor da minha vida",
   "O meu amor",
@@ -21,9 +21,10 @@ const ADJECTIVES = [
   "Batalhadora",
   "Tudo de bom",
   "Gata",
-  "Melhor namorada do mundo",
+  "A melhor namorada do mundo",
   "Fofa",
-  "O meu sonho"
+  "O meu sonho",
+  "Minha"
 ];
 
 
