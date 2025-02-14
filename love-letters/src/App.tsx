@@ -97,7 +97,7 @@ function App() {
       <FloatingItensInBackground item={'🍓'}/>
       <div className='mx-auto'>
         <h1 className='text-center text-2xl text-love-red font-extrabold mb-6 font-playfair-display'>💌 Cartas para a Miudinha 💌</h1>
-        <p className='text-center font-playfair-display'>Você é <span className='font-bold text-love-red font-great-vibes'><AnimateMessage>{adjective}</AnimateMessage></span></p>
+        <p className='text-center font-playfair-display'>Você é <span className='font-bold text-love-red font-great-vibes'><AnimateMessage message={adjective}/></span></p>
       </div>
 
       <Letter message={message}/>

@@ -1,10 +1,13 @@
 import { motion } from "framer-motion"
 
-function AnimateMessage({children}){
+interface AnimateMessageProps{  
+    message: string
+}
+function AnimateMessage({ message } : Readonly<AnimateMessageProps>){
 
     return(
         <span>
-            {children.split('').map((char, index) => (
+            {message.split('').map((char, index) => (
                 <motion.span
                     key={char + '-' + index}
                     initial={{ opacity: 0 }}

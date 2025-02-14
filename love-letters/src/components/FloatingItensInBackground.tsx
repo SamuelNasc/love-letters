@@ -2,7 +2,11 @@ import { motion } from "framer-motion"
 
 const ITENS_COUNT = 15
 
-function FloatingItensInBackground({item}){
+interface FloatingItensBackgroundProps{
+    item: string
+}
+
+function FloatingItensInBackground({item}: Readonly<FloatingItensBackgroundProps>){
     const itens = Array.from({ length: ITENS_COUNT });
     return(
         <div className='absolute inset-0 overflow-hidden pointer-events-none -z-10 bg-ligth-rose'>
