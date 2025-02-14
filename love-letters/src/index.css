@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import 'tailwindcss';
+
+
+@theme {
+    --color-ligth-rose: #F9E4E4;
+    --color-love-red: #C72C41;
+
+    --font-playfair-display: "Playfair Display", sans-serif;
+    --font-great-vibes: "Great Vibes", sans-serif;
+}
